@@ -20,7 +20,7 @@ function Home() {
 	// console.log('rendering.....');
 	return (
 		<div className="App">
-			<h1>Movie Appp</h1>
+			<h1>Movies List Home</h1>
 
 			{loading ? (
 				<h2>Movie Lists loading.....</h2>
@@ -29,6 +29,7 @@ function Home() {
 					{movies.map((movie) => (
 						<Movie
 							key={movie.id}
+							id={movie.id}
 							coverImg={movie.medium_cover_image}
 							title={movie.title}
 							summary={movie.summary}
